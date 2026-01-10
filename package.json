@@ -8,9 +8,11 @@
   },
   "main": "./dist/cli.js",
   "scripts": {
+    "clean": "rm -rf dist",
     "build": "vite build",
     "test": "vitest run",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "keywords": [
     "cli",
