@@ -1,6 +1,6 @@
 {
   "name": "@riotprompt/riotprompt-cli",
-  "version": "0.0.1",
+  "version": "0.0.2-dev.0",
   "description": "CLI for RiotPrompt - process and execute prompts",
   "type": "module",
   "bin": {
@@ -12,7 +12,13 @@
     "test": "vitest run",
     "lint": "eslint src"
   },
-  "keywords": ["cli", "prompt", "llm", "ai", "riotprompt"],
+  "keywords": [
+    "cli",
+    "prompt",
+    "llm",
+    "ai",
+    "riotprompt"
+  ],
   "author": "Tim O'Brien <tobrien@discursive.com>",
   "license": "Apache-2.0",
   "dependencies": {
@@ -26,9 +32,15 @@
     "@riotprompt/execution-gemini": "^0.0.1"
   },
   "peerDependenciesMeta": {
-    "@riotprompt/execution-openai": { "optional": true },
-    "@riotprompt/execution-anthropic": { "optional": true },
-    "@riotprompt/execution-gemini": { "optional": true }
+    "@riotprompt/execution-openai": {
+      "optional": true
+    },
+    "@riotprompt/execution-anthropic": {
+      "optional": true
+    },
+    "@riotprompt/execution-gemini": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.33.1",
@@ -40,4 +52,3 @@
     "vitest": "^3.2.4"
   }
 }
-
