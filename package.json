@@ -26,12 +26,15 @@
     "chalk": "^5.4.1"
   },
   "peerDependencies": {
-    "@riotprompt/riotprompt": "^1.0.0",
-    "@riotprompt/execution-openai": "^0.0.1",
-    "@riotprompt/execution-anthropic": "^0.0.1",
-    "@riotprompt/execution-gemini": "^0.0.1"
+    "@riotprompt/riotprompt": "^0.0.19",
+    "@riotprompt/execution-openai": "^0.0.2",
+    "@riotprompt/execution-anthropic": "^0.0.2",
+    "@riotprompt/execution-gemini": "^0.0.2"
   },
   "peerDependenciesMeta": {
+    "@riotprompt/riotprompt": {
+      "optional": true
+    },
     "@riotprompt/execution-openai": {
       "optional": true
     },
