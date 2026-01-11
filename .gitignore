@@ -8,3 +8,4 @@ coverage/
 **/.DS_Store
 
 output/
+.kodrdriv-test-cache.json
