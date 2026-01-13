@@ -37,10 +37,10 @@
     "chalk": "^5.4.1"
   },
   "peerDependencies": {
-    "@riotprompt/riotprompt": "^0.0.20",
-    "@riotprompt/execution-openai": "^0.0.3",
-    "@riotprompt/execution-anthropic": "^0.0.3",
-    "@riotprompt/execution-gemini": "^0.0.3"
+    "@riotprompt/riotprompt": "^0.0.21",
+    "@riotprompt/execution-openai": "^0.0.4",
+    "@riotprompt/execution-anthropic": "^0.0.4",
+    "@riotprompt/execution-gemini": "^0.0.4"
   },
   "peerDependenciesMeta": {
     "@riotprompt/riotprompt": {
