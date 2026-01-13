@@ -1,6 +1,6 @@
 {
   "name": "@riotprompt/riotprompt-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CLI for RiotPrompt - process and execute prompts",
   "type": "module",
   "bin": {
@@ -34,10 +34,10 @@
     "chalk": "^5.4.1"
   },
   "peerDependencies": {
-    "@riotprompt/riotprompt": "^0.0.19",
-    "@riotprompt/execution-openai": "^0.0.2",
-    "@riotprompt/execution-anthropic": "^0.0.2",
-    "@riotprompt/execution-gemini": "^0.0.2"
+    "@riotprompt/riotprompt": "^0.0.20",
+    "@riotprompt/execution-openai": "^0.0.3",
+    "@riotprompt/execution-anthropic": "^0.0.3",
+    "@riotprompt/execution-gemini": "^0.0.3"
   },
   "peerDependenciesMeta": {
     "@riotprompt/riotprompt": {
