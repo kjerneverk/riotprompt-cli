@@ -1,6 +1,6 @@
 {
   "name": "@riotprompt/riotprompt-cli",
-  "version": "0.0.3-dev.0",
+  "version": "0.0.3",
   "description": "CLI for RiotPrompt - process and execute prompts",
   "type": "module",
   "bin": {
