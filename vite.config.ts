@@ -1,10 +1,9 @@
 import { defineConfig } from "vite";
-import { resolve } from "path";
 
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, "src/cli.ts"),
+      entry: "src/cli.ts",
       name: "riotprompt-cli",
       fileName: () => "cli.js",
       formats: ["es"],
@@ -29,4 +28,3 @@ export default defineConfig({
     minify: false,
   },
 });
-
