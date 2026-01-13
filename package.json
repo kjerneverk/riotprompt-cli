@@ -7,6 +7,9 @@
     "riotprompt": "./dist/cli.js"
   },
   "main": "./dist/cli.js",
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "scripts": {
     "clean": "rm -rf dist",
     "build": "vite build",
