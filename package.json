@@ -33,14 +33,16 @@
     "url": "https://github.com/kjerneverk/riotprompt-cli"
   },
   "dependencies": {
-    "commander": "^14.0.2",
-    "chalk": "^5.4.1"
+    "@theunwalked/cardigantime": "^0.0.22",
+    "@theunwalked/spotclean": "^0.0.3",
+    "chalk": "^5.4.1",
+    "commander": "^14.0.2"
   },
   "peerDependencies": {
-    "@riotprompt/riotprompt": "^0.0.21",
-    "@riotprompt/execution-openai": "^0.0.4",
     "@riotprompt/execution-anthropic": "^0.0.4",
-    "@riotprompt/execution-gemini": "^0.0.4"
+    "@riotprompt/execution-gemini": "^0.0.4",
+    "@riotprompt/execution-openai": "^0.0.4",
+    "@riotprompt/riotprompt": "^0.0.21"
   },
   "peerDependenciesMeta": {
     "@riotprompt/riotprompt": {

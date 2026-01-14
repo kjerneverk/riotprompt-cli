@@ -8,8 +8,29 @@
  */
 
 import { Command } from "commander";
+import { 
+    sanitize, 
+    configureErrorSanitizer,
+    configurePathSanitizer,
+} from "@theunwalked/spotclean";
 
 const VERSION = "0.0.1";
+
+// Configure error sanitization for CLI
+configureErrorSanitizer({
+    enabled: true,
+    environment: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+    includeCorrelationId: true,
+    sanitizeStackTraces: process.env.NODE_ENV === 'production',
+    maxMessageLength: 500,
+});
+
+configurePathSanitizer({
+    enabled: true,
+    basePaths: [process.cwd()],
+    redactSystemPaths: process.env.NODE_ENV === 'production',
+    replacement: '[PATH]',
+});
 
 const program = new Command();
 
@@ -76,5 +97,19 @@ program
         if (options.dryRun) console.log(`  (dry run mode)`);
     });
 
-program.parse();
+// Wrap program execution with error handling
+async function main() {
+    try {
+        await program.parseAsync();
+    } catch (error) {
+        const { external } = sanitize(error as Error);
+        console.error(`Error: ${external.message}`);
+        if (external.correlationId) {
+            console.error(`Reference: ${external.correlationId}`);
+        }
+        process.exit(1);
+    }
+}
+
+main();
 
