@@ -51,3 +51,5 @@ riotprompt execute ./my-prompt --provider openai
 
 Apache-2.0
 
+<!-- v1.0.0 -->
+
